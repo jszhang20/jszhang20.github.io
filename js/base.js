@@ -341,7 +341,7 @@ function Base() {
         ) {
             let html = '<div id="animationSwitch" data="off" style="z-index: 999; position: absolute; top: 15px; right: 20px; font-size: 14px; color: #F9F9F9; cursor: pointer;">';
             html += '<span class="iconfont icon-lightning" style="display: inline-block;"></span>';
-            html += '<span>关闭页面特效</span>';
+            html += '<span>Turn off Page Effects</span>';
             html += '</div>';
             $('#tools').prepend(html);
             $('#animationSwitch').click(function () {
