@@ -5,9 +5,9 @@
         User: 'LiveForCode',
         UserAvatar: '/image/sidebar/avatar.jpg',
         WebsiteStartDate: '2020-01-01',
-        WebsiteTitleBlur: '(◍´꒳`◍) Hi, Live For Code',
+        WebsiteTitleBlur: '(◍´꒳`◍) Hi, Jinsong',
         WebsiteTitleBlurTimeOut: 500,
-        WebsiteTitleFocus: '(*´∇｀*) 欢迎回来!',
+        WebsiteTitleFocus: '(*´∇｀*) Welcome back! ',
         WebsiteTitleFocusTimeOut: 1000,
         WebsiteFavicon: '/image/website/logo.png',
         ProgressBar: {
@@ -70,13 +70,13 @@
             icon: "icon-swimming",
             title: "PAGE NOT FOUND",
             content: [
-                "很抱歉，您访问的页面不存在！",
-                "可能是输入地址有误或该地址已变更。"
+                "404 NOT FOUND",
+                "error"
             ],
             buttons: [
                 {
                     icon: "icon-home",
-                    text: "返回首页",
+                    text: "Home Page",
                     href: "/",
                     class: ""
                 }
@@ -89,7 +89,7 @@
         },
         MenuList : [
             {
-                name: '首页',
+                name: 'Home',
                 icon: 'icon-home-fill',
                 href: '/',
                 type: 'index',
@@ -99,7 +99,7 @@
         ],
         MenuLink : [],
         FooterStyle: 2,
-        BottomText: '<div><span class="face">ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class="iconfont icon-like-fill"></i></span>何事秋风悲画扇】</div><div>Live For Code</div>',
+        BottomText: '<div><span class="face">ღゝ◡╹)ノ♡</span></div><div>【Get busy living<span><i class="iconfont icon-like-fill"></i></span>Get busy dying】</div><div>Live For Code</div>',
         ConsoleList: [],
         FontIconExtend: '',
         Donate: {
@@ -116,9 +116,9 @@
                 page: 10
             },
             labels: {
-                placeholder: '搜索',
-                empty: '未发现与 「${query}」 相关的内容',
-                stats: '${hits} 条相关条目，使用了 ${time} 毫秒'
+                placeholder: 'Search',
+                empty: '「${query}」 Not Found',
+                stats: '${hits} related items，using ${time} ms'
             }
         },
         Valine: {
@@ -127,7 +127,7 @@
             appId: 'srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz',
             appKey: '8uVSP1q6UlALVC5igYfIfv2h',
             serverURLs: '',
-            placeholder: '你是我一生只会遇见一次的惊喜...',
+            placeholder: 'say something...',
             notify: false,
             verify: false,
             avatar: 'mm',
@@ -242,7 +242,7 @@
             UbuntuMono: '/font/UbuntuMono.css'
         },
         Suffix: {
-            about: '简单地活着, 肆意又精彩.'
+            about: 'Get busy living.'
         },
         Theme: {
             url: 'https://github.com/first19326/Hexo-LiveForCode',
