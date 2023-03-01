@@ -8,7 +8,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            Week 2
+            Week 4
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -36,19 +36,19 @@
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">Week 2</h1>
+                <h1 class="header-subtitle">Week 4</h1>
                 <div class="header-subinfo">
                     <p class="article-info-text">
                         <span>
-                            <i class="iconfont icon-time"></i> Date: 2023-02-23
+                            <i class="iconfont icon-time"></i> Date: 2023-02-25
                         </span>
                         
-                            <span id="/2023/02/23/hello-world/" class="leancloud_visitors" data-flag-title="Week 2">
+                            <span id="/2023/02/25/hello-world/" class="leancloud_visitors" data-flag-title="Week 4">
                                 <i class="iconfont icon-browse"></i> Visitors: <sapn class="leancloud-visitors-count"></span>
                             </span>
                         
                         <span>
-                            <i class="iconfont icon-interactive"></i> Comment: <span class="valine-comment-count" data-xid="/2023/02/23/Week 2/"></span>
+                            <i class="iconfont icon-interactive"></i> Comment: <span class="valine-comment-count" data-xid="/2023/02/25/Week 4/"></span>
                         </span>  
                     </p>
                     
@@ -65,19 +65,33 @@
         <div id="article">
             <div class="toc"></div>
             <div class="article-body">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                                
+                <p>This week we got the components for the Jetbot and worked together to complete the assembly of the Jetbot.</p>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="Hardware-Setup"><a href="#Hardware-Setup" class="headerlink" title="Hardware Setup"></a>Hardware Setup</h2>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Motor"><a href="#Motor" class="headerlink" title="Motor"></a>Motor</h3>
+<img src="/image/jetbot/motor.jpg" width="400" hight="300">
+<p>The Jetbot's motion module consists of two motors as well as a motor driver. Plug a data cable into the motherboard of the Jetson nano. And assemble the two wheels to the motors.</p>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="WiFi"><a href="#WiFi" class="headerlink" title="WiFi"></a>WiFi</h3>
+<img src="/image/jetbot/wifi.jpg" width="400" hight="300">
+<p>The WiFi module consists of a wireless network card that plugs directly into the Jetson nano's motherboard.</p>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="Display"><a href="#Display" class="headerlink" title="Display"></a>Display</h3>
+<img src="/image/jetbot/display.jpg" width="400" hight="300">
+<p>Attaching a PiOLED screen to the Jetson nano motherboard requires soldering to be done here.</p>
+
+<h3 id="Camera"><a href="#Camera" class="headerlink" title="Camera"></a>Camera</h3>
+<img src="/image/jetbot/camera.jpg" width="400" hight="300">
+<p>Connecting a Raspberry Pi csi camera to a Jetson nano motherboard.</p>
+
+<h3 id="Battery"><a href="#Battery" class="headerlink" title="Battery"></a>Battery</h3>
+<img src="/image/jetbot/battery.jpg" width="400" hight="300">
+<p>Put the rechargeable battery into the body. And connect the two outputs to the motor and the motherboard respectively, which are used to power the motherboard and the motor.</p>
+
+<h3 id="completed"><a href="#completed" class="headerlink" title="Assembly completed"></a>Assembly completed</h3>
+<img src="/image/jetbot/jetbot.jpg" width="400" hight="300">
 
                 
                 <p class="end">__END__</p>
@@ -90,7 +104,7 @@
     <div class="suffix-box-right">
         <span class="suffix-box-title">Author: </span>Jinsong Zhang
         <br>
-        <span class="suffix-box-title">From: </span><a href="/2023/02/27/hello-world/" target="_blank">Week 1</a>
+        <span class="suffix-box-title">From: </span><a href="/2023/02/25/hello-world/" target="_blank">Week 4</a>
         <br>
         <span class="suffix-box-title">Sign: </span>Get busy living.
         <br>
