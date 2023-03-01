@@ -66,32 +66,24 @@
             <div class="toc"></div>
             <div class="article-body">
                                 
-                <p>This week we got the components for the Jetbot and worked together to complete the assembly of the Jetbot.</p>
+                <p>This week we finished the automatic obstacle avoidance function. In addition, we tried to merge auto-avoidance with road tracking, but we did not complete the merge due to lack of time. Fortunately, both of our functions are working properly separately.</p>
 
-<h2 id="Hardware-Setup"><a href="#Hardware-Setup" class="headerlink" title="Hardware Setup"></a>Hardware Setup</h2>
+<h2 id="Collision-Avoidance"><a href="#Collision-Avoidance" class="headerlink" title="Collision Avoidance"></a>Collision Avoidance</h2>
 
-<h3 id="Motor"><a href="#Motor" class="headerlink" title="Motor"></a>Motor</h3>
-<img src="/image/jetbot/motor.jpg" width="400" hight="300">
-<p>The Jetbot's motion module consists of two motors as well as a motor driver. Plug a data cable into the motherboard of the Jetson nano. And assemble the two wheels to the motors.</p>
+<h3 id="Datasets"><a href="#Datasets" class="headerlink" title="Datasets"></a>Datasets</h3>
+<img src="/image/jetbot/data.jpg" width="400" hight="300">
+<p>As last time, we first built an area with paper strips as "barriers". A dataset of 200 images was created in this area.</p>
 
-<h3 id="WiFi"><a href="#WiFi" class="headerlink" title="WiFi"></a>WiFi</h3>
-<img src="/image/jetbot/wifi.jpg" width="400" hight="300">
-<p>The WiFi module consists of a wireless network card that plugs directly into the Jetson nano's motherboard.</p>
+<h3 id="Training"><a href="#Training" class="headerlink" title="Training"></a>Training</h3>
+<img src="/image/jetbot/trr.jpg" width="400" hight="300">
+<p>Again, we chose the ResNet-18 model and imported the dataset for 30 rounds of training. At this point, note that the Jetbot's heat sink will be very hot due to passive cooling.</p>
 
-<h3 id="Display"><a href="#Display" class="headerlink" title="Display"></a>Display</h3>
-<img src="/image/jetbot/display.jpg" width="400" hight="300">
-<p>Attaching a PiOLED screen to the Jetson nano motherboard requires soldering to be done here.</p>
+<h3 id="Testing"><a href="#Testing" class="headerlink" title="Testing"></a>Testing</h3>
+<img src="/image/jetbot/ca.jpg" width="400" hight="300">
+<p>Slightly different from the road tracking test, this time there is no need to adjust the motor-related parameters. However, parameters such as steering sensitivity in the model can still be adjusted manually. Fortunately we implemented this feature.</p>
 
-<h3 id="Camera"><a href="#Camera" class="headerlink" title="Camera"></a>Camera</h3>
-<img src="/image/jetbot/camera.jpg" width="400" hight="300">
-<p>Connecting a Raspberry Pi csi camera to a Jetson nano motherboard.</p>
-
-<h3 id="Battery"><a href="#Battery" class="headerlink" title="Battery"></a>Battery</h3>
-<img src="/image/jetbot/battery.jpg" width="400" hight="300">
-<p>Put the rechargeable battery into the body. And connect the two outputs to the motor and the motherboard respectively, which are used to power the motherboard and the motor.</p>
-
-<h3 id="completed"><a href="#completed" class="headerlink" title="Assembly completed"></a>Assembly completed</h3>
-<img src="/image/jetbot/jetbot.jpg" width="400" hight="300">
+<h3 id="Consolidation"><a href="#Consolidation" class="headerlink" title="Consolidation"></a>Consolidation</h3>
+<p>We tried to merge the models of road tracking and automatic obstacle avoidance, but lack of time prevented us from achieving this work. There are many ways to do this, but they all take some time. For example, merging two models and adding logic code to the main program to call the different models, but it is a pity that this was not done.</p>
 
                 
                 <p class="end">__END__</p>
