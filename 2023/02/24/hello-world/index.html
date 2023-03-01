@@ -40,15 +40,15 @@
                 <div class="header-subinfo">
                     <p class="article-info-text">
                         <span>
-                            <i class="iconfont icon-time"></i> Date: 2023-02-23
+                            <i class="iconfont icon-time"></i> Date: 2023-02-24
                         </span>
                         
-                            <span id="/2023/02/23/hello-world/" class="leancloud_visitors" data-flag-title="Week 3">
+                            <span id="/2023/02/24/hello-world/" class="leancloud_visitors" data-flag-title="Week 3">
                                 <i class="iconfont icon-browse"></i> Visitors: <sapn class="leancloud-visitors-count"></span>
                             </span>
                         
                         <span>
-                            <i class="iconfont icon-interactive"></i> Comment: <span class="valine-comment-count" data-xid="/2023/02/23/Week 3/"></span>
+                            <i class="iconfont icon-interactive"></i> Comment: <span class="valine-comment-count" data-xid="/2023/02/24/Week 3/"></span>
                         </span>  
                     </p>
                     
@@ -65,19 +65,22 @@
         <div id="article">
             <div class="toc"></div>
             <div class="article-body">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <p>This week we mainly finished the printing of the road and the implementation of the auto-tracking function.</p>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="Road-Following"><a href="#Road-Following" class="headerlink" title="Road Following"></a>Road Following</h2>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Datasets"><a href="#Datasets" class="headerlink" title="Datasets"></a>Datasets</h3>
+                <img src="/image/jetbot/datasets.jpg" width="400" hight="300">
+<p>First we worked out some bugs in the python code. then we printed the roads and made a dataset with 200 road photos.</p>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Training"><a href="#Training" class="headerlink" title="Training"></a>Training</h3>
+                <img src="/image/jetbot/resnet.jpg" width="400" hight="300">
+                <img src="/image/jetbot/tr.jpg" width="400" hight="300">
+<p>The completed dataset was imported into the ResNet-18 neural network model for regression training. In addition, there are many open source neural network models on GitHub to choose from, which greatly reduces our workload.</p>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="Testing"><a href="#Testing" class="headerlink" title="Testing"></a>Testing</h3>
+                <img src="/image/jetbot/rf.jpg" width="400" hight="300">
+<p>Finally, we tested the auto-tracking function of Jetbot. By adjusting some parameters of the model for the motor, we successfully implemented the auto-tracking function.</p>
 
                 
                 <p class="end">__END__</p>
@@ -90,7 +93,7 @@
     <div class="suffix-box-right">
         <span class="suffix-box-title">Author: </span>Jinsong Zhang
         <br>
-        <span class="suffix-box-title">From: </span><a href="/2023/02/27/hello-world/" target="_blank">Week 1</a>
+        <span class="suffix-box-title">From: </span><a href="/2023/02/27/hello-world/" target="_blank">Week 3</a>
         <br>
         <span class="suffix-box-title">Sign: </span>Get busy living.
         <br>
