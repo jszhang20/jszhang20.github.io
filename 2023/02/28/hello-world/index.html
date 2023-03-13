@@ -70,7 +70,7 @@
 <h2 id="Manual"><a href="#Manual" class="headerlink" title="Manual"></a>Manual</h2>
 
 <h3 id="Building-local-network"><a href="#Building-local-network" class="headerlink" title="Building local network"></a>Building local network</h3>
-                <img src="/image/jetbot/wifi.jpg" width="400" hight="300">
+               
 <p>You need to prepare an HDMI cable, a keyboard, and a monitor for building a LAN (using a mobile hotspot will do). Connect the power of the Jetbot and connect the display to the HDMI port of the jetbot. Once the Jetbot's system has successfully booted, use the command line to connect your cell phone hotspot. Don't worry, the Jetbot is the internal equivalent of a Linux OS computer. All you need to do to connect your mobile hotspot is to enter the following command.</p>
 <p>sudo nmcli device wifi connect &lt;SSID&gt; password &lt;PASSWORD&gt;</p>
 <p>Note that you need to change &lt;SSID&gt; to the name of your hotspot and &lt;PASSWORD&gt; to the password of your hotspot to connect successfully. For example:</p>
@@ -78,19 +78,23 @@
 <p>Here s22u is the name of the mobile hotspot we set before, and 12345679 is the password of the hotspot (you can also change the name of your mobile hotspot to s22u password 12345679 directly, so that the jetbot can connect to your mobile hotspot automatically without a computer screen).</p>
 
 <h3 id="Launch-jupyter-notebook"><a href="#Launch-jupyter-notebook" class="headerlink" title="Launch jupyter notebook"></a>Launch jupyter notebook</h3>
-                <img src="/image/jetbot/display.jpg" width="400" hight="300">
+                
 <p>Here is an example using a laptop, make sure the jetbot is connected to the same mobile hotspot as the laptop, use the laptop to open a browser and type in the following URL to access.</p>
 <p>http://&lt;jetbot_ip_address&gt;:8888</p>
 <p>Here <jetbot_ip_address> is the IP address of the jetbot, which you can usually observe through the jetbot's pi-OLED display. For example, if its IP address is 192.168.35.24 then go to the following URL.</p>
 <p>http://192.168.35.24:8888</p>
-<p>After successful connection, the following screen will be displayed, and you can successfully connect your laptop to the Jetbot by entering the password: jetbot Now you can use your laptop to control the Jetbot!</p>
-
+<p>After successful connection, the following screen will be displayed, and you can successfully connect your laptop to the Jetbot by entering the password: jetbot</p>
+		    <img src="/image/jetbot/jupyter.jpg" width="400" hight="300">
+<p>Now you can use your laptop to control the Jetbot!</p>
+		    
+		    
+		    
 <h3 id="Deployment-Road-Following"><a href="#Deployment-Road-Following" class="headerlink" title="Deployment Road Following"></a>Deployment Road Following</h3>
-			<img src="/image/jetbot/camera.jpg" width="400" hight="300">
+			
 <p>After you have successfully logged into jupyter notebook you will usually see the following files.</p>
-                <img src="/image/jetbot/camera.jpg" width="400" hight="300">
+                <img src="/image/jetbot/files.jpg" width="400" hight="300">
 <p>Put the Jetbot on top of our printed runway after we finish stitching it together. Open the notebooks folder and then open the live_demo.ipynb file. From top to bottom, click the run button at the top for each selected block of code. Keep running until you get to this block of code.</p>
-                <img src="/image/jetbot/camera.jpg" width="400" hight="300">
+                <img src="/image/jetbot/step.jpg" width="400" hight="300">
 <p>At this point you can adjust the parameter controller generated above to achieve auto-tracking of the cart. Our recommended parameters are</p>
 <p>Speed gain 0.20</p>
 <p>Steering gain 0.03~0.04</p>
